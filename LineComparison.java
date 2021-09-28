@@ -12,9 +12,15 @@ public class LineComparison {
 		public static void main(String[] args)
 		{
 			LineComparison linecomparison = new LineComparison();
-			Double lineOne = linecomparison.distance(2, 3, 4, 5);
+			Double lineOne = linecomparison.distance(4, 6, 8, 5);
 			Double lineTwo = linecomparison.distance(1, 2, 3, 4);
-			System.out.println("lineOne and lineTwo are equal.True or False : " +lineOne.equals(lineTwo));
+		
+		if (Double.compare(lineOne, lineTwo) == 0)
+			System.out.println("Both the lines are Equal");
+		else if (Double.compare(lineOne, lineTwo) < 0)
+			System.out.println("lineTwo is greater than lineOne");
+		else
+			System.out.println("lineOne is Greater than lineTwo");
 		}
 	
 }
