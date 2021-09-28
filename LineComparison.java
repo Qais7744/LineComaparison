@@ -12,8 +12,9 @@ public class LineComparison {
 		public static void main(String[] args)
 		{
 			LineComparison linecomparison = new LineComparison();
-			double value = linecomparison.distance(4, 5, 6, 7);
-			System.out.println("calculate distance between two points : " +value);
+			Double lineOne = linecomparison.distance(2, 3, 4, 5);
+			Double lineTwo = linecomparison.distance(1, 2, 3, 4);
+			System.out.println("lineOne and lineTwo are equal.True or False : " +lineOne.equals(lineTwo));
 		}
 	
 }
